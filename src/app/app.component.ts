@@ -9,13 +9,13 @@ import { HttpClient } from '@angular/common/http';
 export class AppComponent {
 
   constructor(private http:HttpClient) {
-    console.log("constructor activo");
+    /* console.log("constructor activo");
     this.http.get("http://localhost:3000/api")
     .subscribe((res)=>{
       console.log(res);
-    })
+    }) */
   }
-   title = 'angular-front';
+ /*   title = 'angular-front';
   clickConsumir(){
     console.log("hola mundo desde aki");
     this.http.get("http://localhost:3000/api")
@@ -23,5 +23,5 @@ export class AppComponent {
       console.log(res);
     })
     
-  }
+  } */
 } 

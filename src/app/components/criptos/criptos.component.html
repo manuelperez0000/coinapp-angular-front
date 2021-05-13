@@ -1,1 +1,46 @@
-<p>criptos works!</p>
+<div class="loading" *ngIf="loading">
+  <h1>
+    <div class="spinner-border" role="status">
+    </div>
+    Cargando, <small>Por favor espere...</small>
+  </h1>
+</div>
+    <h1>Lista de criptomonedas</h1>
+    
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">ID <i class="fa fa-list"></i></th>
+            <th scope="col">Simbol <i class="bi-list"></i></th>
+            <th scope="col">Nombre</th>
+            <th scope="col">Precio</th>
+          </tr>
+        </thead>
+        <tbody>
+    
+          <!-- <tr *ngIf="loading">
+            <td>
+              <div class="spinner-border" role="status">
+              </div>
+            </td>
+            <td>
+              <div class="spinner-border" role="status">
+              </div>
+            </td>
+            <td>
+              <div class="spinner-border" role="status">
+              </div>
+            </td>
+            <td>
+              <div class="spinner-border" role="status">
+              </div>
+            </td>
+          </tr> -->
+          <tr *ngFor="let item of listaCriptos">
+            <th scope="row">{{ item.id }} </th>
+            <td>{{ item.symbol }}</td>
+            <td>{{ item.name }}</td>
+            <td>{{ item.quote.USD.price | currency }}</td>
+          </tr>
+        </tbody>
+      </table>

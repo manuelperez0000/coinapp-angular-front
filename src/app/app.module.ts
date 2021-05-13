@@ -4,7 +4,8 @@ import { HttpClientModule } from '@angular/common/http';
 import "rxjs";
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ApiresComponent } from './componets/apires/apires.component';
+
+
 import { HomeComponent } from './components/home/home.component';
 import { CriptosComponent } from './components/criptos/criptos.component';
 import { RouterModule } from '@angular/router';
@@ -15,7 +16,6 @@ import { FooterComponent } from './components/footer/footer.component';
 @NgModule({
   declarations: [
     AppComponent,
-    ApiresComponent,
     HomeComponent,
     CriptosComponent,
     NavbarComponent,

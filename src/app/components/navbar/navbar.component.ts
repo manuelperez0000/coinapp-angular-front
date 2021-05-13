@@ -6,9 +6,12 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
+  showmenu:boolean = false
 
+  menuOf(){
+    this.showmenu = !this.showmenu
+  }
   constructor() { }
-
   ngOnInit(): void {
   }
 

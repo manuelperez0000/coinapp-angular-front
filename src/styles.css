@@ -1,1 +1,137 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;500;700&display=swap');
+p,b,a,h1,h2,h3,h4,h5,h6,div{
+    font-family: 'Comfortaa', cursive;
+}
+:root{
+    --amarillo-c:rgb(254,235,151);
+    --amarillo-o:rgb(244,218,24);
+    --azul1:rgb(221,250,247);
+    --azul2:rgb(144,230,223);
+    --azul3:rgb(41, 126, 155);
+    --griz-c:rgb(179,179,179);
+    --griz-m:rgb(128,128,128);
+    --griz-o:rgb(73, 73, 73);
+}
+.griz-o{
+    color: var(--griz-o);
+}
+
+.header-blue{
+    background-color:var(--azul2);
+    padding-bottom:20px;
+}
+.img-logo{
+    height: 80px;
+}
+.menuA{
+    text-align: right;
+    transition-duration: 1s;
+    animation-duration: 1s;
+}
+
+.menu-ico{
+    margin-top: 5px;
+    color:var(--azul1);
+    font-size: xx-large;
+    border:2px solid var(--azul2);
+    transition-duration: 1s;
+    border-radius: 5px;
+}
+.menu-ico:hover{
+    border: 2px solid rgba(255, 255, 255, 0.15);
+    background-color: rgba(255, 255, 255, 0.096);
+    cursor: pointer;
+}
+.menubtn{
+    background-color: rgba(0,0,0,0);
+    border: 0px;
+}
+.hover-menu{
+    padding: 20px;
+    color: var(--griz-o);
+    width: 98%;
+    max-width: 400px;
+    height: 100%;
+    border:1px solid rgb(245, 245, 245);
+    border-radius: 1px;
+    position: fixed;
+    background-color: rgba(249, 249, 249, 0.96);
+    transition-duration: 1s;
+    transform: translateX(500px);
+    top: 0px;
+    right: 0px;
+}
+.boton-x{
+    background-color: rgba(0, 0, 0, 0);
+    border: 2px solid rgba(0, 0, 0, 0);
+    border-radius: 50px;
+    float: right;
+    color: var(--griz-o);
+}
+.boton-x:hover{
+    border: 2px solid rgba(63, 128, 248, 0.424);
+    background-color: rgba(93, 217, 255, 0.164);
+
+}
+.loading{
+    background-color: rgba(41, 126, 197, 1);
+    color: rgb(255, 235, 205);
+    position: fixed;
+    top:0px;
+    left:0px;
+    width: 100%;
+    height: 100%;
+    padding: 100px;
+    text-align: center;
+}
+
+
+.itemMenu{
+  
+    height: 40px;
+}
+.bluebtn{
+    background-color: var(--azul2);
+    color: white;
+    border-radius: 50px; 
+}
+.grizbtn{
+    background-color: var(--griz-c);
+    color: var(--griz-m);
+    border-radius: 50px; 
+}
+.max-500{
+    max-width: 500px;
+}
+
+.prox{
+    background-color: rgba(177, 177, 177, 0.774);
+    color: whitesmoke;
+    border-radius: 50px;
+    padding: 5px;
+    font-size: 12px;
+}
+.prox-h1{
+    color: gray;
+}
+p{
+    margin: 0px;
+}
+.ws{
+    position: fixed;
+    height: 60px;
+    width: 60px;
+    bottom: 20px;
+    right: 20px;
+    transition: 0.7s;
+}
+.ws:hover{
+    transform: scale(1.13) rotate(-7deg);
+}
+.container-fluid{
+    padding: 0px !important; 
+    
+ }
+ .img-bottom{
+     width: 200px;
+ }
