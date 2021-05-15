@@ -1,61 +1,115 @@
-<div class="container-fluid max-500">
+<div class="container-fluid">
   <div class="row">
-    <div class="col-12 text-center mt-2">
-      <h4>Compra y vende criptomonedas de forma rapida y segura</h4>
-    </div>
-  </div>
+    <div class="col-12 col-md-8  pb-5">
+      <div class="p-3 bg-light text-center">
+        <marquee behavior="left" class="griz">
+          <b class="n-marquee"> BTC</b>
+          ( Compra:
+          <b class="negro">$50.526</b>,
+          Venta:
+          <b class="negro">$51.125</b> ) -
+          <b class="n-marquee">ETH</b> ( Compra:
+          <b class="negro">$3.526 </b>,
+           Venta:
+          <b class="negro">$3.925</b> )
+      </marquee>
+      </div>
+      <div class="">
+        <div class="max-500 m-auto">
+          <div class="row">
+            <div class="col-12 text-center mt-2">
+              <h6 class="d-md-none">Compra y vende criptomonedas de forma rapida y segura</h6>
+              <h3 class="d-none d-md-inline py-3">Compra y vende criptomonedas de forma rapida y segura</h3>
+            </div>
+          </div>
 
-  <div class="row pt-2 pb-4">
-    <div class="col-12">
-      <h2>
-        <img src="../../../assets/items/logocripto.png" class="itemMenu" alt="" srcset="">
-        Criptomonedas
-      </h2>
+          <div class="row pt-2 pb-3">
+            <div class="col-12 mb-1">
+              <h4>
+                <img src="../../../assets/items/logocripto.png" class="itemMenu" alt="" srcset="">
+                Criptomonedas
+              </h4>
+            </div>
+            <div class="col-6">
+              <button routerLink="Compra" class="bluebtn btn w-100 shadow-mx">Comprar</button>
+            </div>
+            <div class="col-6">
+              <button class="grizbtn btn w-100 shadow-mx">Vender</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <div class="max-500 m-auto pb-3">
+          <div class="row">
+            <div class="col-12 medio-bg mb-1">
+              <h4 class="prox-h1">
+                <img src="../../../assets/items/logo-electro.png" class="itemMenu" alt="" srcset="">
+                Electronicos
+              </h4>
+              <b class="prox">Proximamente</b>
+            </div>
+            <div class="col-6">
+              <button class="bluebtn btn w-100 shadow-mx" >Comprar</button>
+            </div>
+            <div class="col-6">
+              <button class="grizbtn btn w-100 shadow-mx" >Vender</button>
+            </div>
+          </div>
+          <div class="row pt-3">
+            <div class="col-12">
+              <h4 class="prox-h1">
+                <img src="../../../assets/items/logo-remesas.png" class="itemMenu" alt="" srcset="">
+                Remesas
+              </h4>
+              <b class="prox">Proximamente</b>
+            </div>
+            <div class="col-12 mt-2">
+              <button class="bluebtn btn w-100 shadow-mx" >Remesas en Bolivares</button>
+            </div>
+          </div>
+        </div>
+
+
+      <div class="row">
+        <div class="col-12 p-0">
+          <img src="../../../assets/items/bottom-img.png" class="img-bottom" alt="">
+        </div>
+      </div>
+
     </div>
-    <div class="col-6">
-      <button class="bluebtn btn w-100">Comprar</button>
-    </div>
-    <div class="col-6">
-      <button class="grizbtn btn w-100">Vender</button>
+    <div class="col-4 d-none d-md-inline pt-3 bg-white">
+      <div class="w-100 text-center">
+        <h3>Menu</h3>
+
+      </div>
+      <div class="list-group list-group-flush">
+        <button routerLink="home" onclick="closeMenu()" type="button" class="list-group-item list-group-item-action griz-o">
+          <i class="bi bi-house"></i> Inicio</button>
+        <button routerLink="login" onclick="closeMenu()" type="button" class="list-group-item list-group-item-action griz-o">
+          <i class="bi bi-person"></i> Login</button>
+
+        <button routerLink="registro" onclick="closeMenu()" routerLink="criptos" type="button" class="list-group-item list-group-item-action griz-o">
+          <i class="bi bi-file-earmark-person"></i> Registro</button>
+
+        <button routerLink="criptos" onclick="closeMenu()" class="list-group-item list-group-item-action griz-o">
+          <i class="bi bi-bar-chart"></i> Criptomonedas</button>
+
+        <button routerLink="guia" type="button" class="list-group-item list-group-item-action griz-o">
+          <i class="bi bi-book"></i> Guia de uso</button>
+
+        <button routerLink="politicas" type="button" class="list-group-item list-group-item-action griz-o">
+          <i class="bi bi-file-lock"></i> Politicas de privacidad</button>
+      </div>
+
+      <div class="list-group list-group-flush mt-3">
+
+        <button routerLink="remesas" type="button" class="list-group-item list-group-item-action" disabled>
+          <i class="bi bi-arrow-left-right"></i> Remesas</button>
+
+        <button routerLink="electronicos" type="button" class="list-group-item list-group-item-action" disabled>
+          <i class="bi bi-cash"></i> Electronicos</button>
+      </div>
     </div>
   </div>
 </div>
-
-<div class="container-fluid bg-dark">
-  <div class="max-500 m-auto pb-3"> 
-    <div class="row">
-      <div class="col-12 medio-bg">
-        <h2 class="prox-h1">
-          <img src="../../../assets/items/logo-electro.png" class="itemMenu" alt="" srcset="">
-          Electronicos
-        </h2>
-        <b class="prox">Proximamente</b>
-      </div>
-      <div class="col-6">
-        <button class="bluebtn btn w-100" >Comprar</button>
-      </div>
-      <div class="col-6">
-        <button class="grizbtn btn w-100" >Vender</button>
-      </div>
-      <div class="col-12">
-        <h2 class="prox-h1">
-          <img src="../../../assets/items/logo-remesas.png" class="itemMenu" alt="" srcset="">
-          Remesas
-        </h2>
-        <b class="prox">Proximamente</b>
-      </div>
-      <div class="col-12 mt-2">
-        <button class="bluebtn btn w-100" >Remesas en Bolivares</button>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="container-fluid mt-4">
-  <div class="row">
-    <div class="col-12">
-      <img src="../../../assets/items/bottom-img.png" class="img-bottom" alt="">
-    </div>
-  </div>
-</div>
-

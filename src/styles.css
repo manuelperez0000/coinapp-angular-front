@@ -8,6 +8,8 @@ p,b,a,h1,h2,h3,h4,h5,h6,div{
     --azul1:rgb(221,250,247);
     --azul2:rgb(144,230,223);
     --azul3:rgb(41, 126, 155);
+    --azul4:rgba(92, 185, 178, 0.938);
+    --azul5:rgb(42, 43, 44);
     --griz-c:rgb(179,179,179);
     --griz-m:rgb(128,128,128);
     --griz-o:rgb(73, 73, 73);
@@ -15,13 +17,23 @@ p,b,a,h1,h2,h3,h4,h5,h6,div{
 .griz-o{
     color: var(--griz-o);
 }
-
+.shadow-mx{
+  -webkit-box-shadow: -8px 5px 20px -10px rgba(0,0,0,0.35);
+-moz-box-shadow: -8px 5px 20px -10px rgba(0,0,0,0.35);
+box-shadow: -8px 5px 20px -10px rgba(0,0,0,0.35);
+}
+.shadow-in{
+  -webkit-box-shadow: inset -5px 31px 50px 12px rgba(0,0,0,0.2);
+-moz-box-shadow: inset -5px 31px 50px 12px rgba(0,0,0,0.2);
+box-shadow: inset -5px 31px 50px 12px rgba(0,0,0,0.2);
+}
 .header-blue{
-    background-color:var(--azul2);
+    background-color:var(--griz-o);
     padding-bottom:20px;
 }
 .img-logo{
-    height: 80px;
+    width: 100%;
+    max-width: 200px;
 }
 .menuA{
     text-align: right;
@@ -45,6 +57,7 @@ p,b,a,h1,h2,h3,h4,h5,h6,div{
 .menubtn{
     background-color: rgba(0,0,0,0);
     border: 0px;
+    float: right;
 }
 .hover-menu{
     padding: 20px;
@@ -87,18 +100,17 @@ p,b,a,h1,h2,h3,h4,h5,h6,div{
 
 
 .itemMenu{
-  
     height: 40px;
 }
 .bluebtn{
     background-color: var(--azul2);
     color: white;
-    border-radius: 50px; 
+    border-radius: 50px;
 }
 .grizbtn{
     background-color: var(--griz-c);
     color: var(--griz-m);
-    border-radius: 50px; 
+    border-radius: 50px;
 }
 .max-500{
     max-width: 500px;
@@ -128,10 +140,40 @@ p{
 .ws:hover{
     transform: scale(1.13) rotate(-7deg);
 }
-.container-fluid{
-    padding: 0px !important; 
-    
- }
+/* .container-fluid{
+    padding: 0px !important;
+ } */ 
  .img-bottom{
-     width: 200px;
+     width:90%;
+     max-width: 600px;
  }
+.text-footer{
+  color: var(--griz-c);
+  font-size: 10px;
+}
+h4{
+  margin: 0px;
+  padding: 0px;
+}
+#myDIV{
+  background-color:white;
+  min-height: 150vh;
+}
+body{
+  background-color:#f5f5f5;
+}
+.n-marquee{
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  color: var(--azul2);
+}
+.negro{
+  color: black;
+}
+.griz{
+  color:rgb(54, 54, 54);
+}
+.cero-pad{
+  padding-right: 0px;
+  padding-left:0px;
+}

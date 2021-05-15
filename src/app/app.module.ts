@@ -12,6 +12,7 @@ import { RouterModule } from '@angular/router';
 import { ROUTES } from './app.routes';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { CompraComponent } from './components/compra/compra.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { FooterComponent } from './components/footer/footer.component';
     HomeComponent,
     CriptosComponent,
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    CompraComponent
   ],
   imports: [
     BrowserModule,
